@@ -1,0 +1,4 @@
+# Kaggle replica + the two test-only deps missing for fastapi training tasks (inline_snapshot, dirty_equals).
+# Use for local scoring on public tasks; plain gemma4-kaggle:v170 is the strict replica.
+FROM gemma4-kaggle:v170
+RUN pip install -q --no-cache-dir inline-snapshot==0.36.1 dirty-equals==0.11
